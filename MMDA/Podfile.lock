@@ -1,5 +1,4 @@
 PODS:
-  - Alamofire (4.4.0)
   - Charts (3.1.1):
     - Charts/Core (= 3.1.1)
   - Charts/Core (3.1.1)
@@ -10,30 +9,23 @@ PODS:
     - GoogleMaps/Base
   - GooglePlaces (2.7.0):
     - GoogleMaps/Base (= 2.7.0)
-  - PusherSwift (4.1.0)
 
 DEPENDENCIES:
-  - Alamofire (~> 4.4.0)
   - Charts
   - GoogleMaps
   - GooglePlaces
-  - PusherSwift (~> 4.1.0)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
-    - Alamofire
     - Charts
     - GoogleMaps
     - GooglePlaces
-    - PusherSwift
 
 SPEC CHECKSUMS:
-  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
   Charts: 90a4d61da0f6e06684c591e3bcab11940fe61736
   GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
   GooglePlaces: 3d06e6c99654545b4738ce49648745779c25f2ef
-  PusherSwift: 13257260d77445f44ee26d7843e9311186b26e79
 
-PODFILE CHECKSUM: c014751538b9c1be73dbc59f8d013f144f589219
+PODFILE CHECKSUM: 51ac46f37c03f2e432efdfa5ec2cd072907d12b8
 
 COCOAPODS: 1.5.0

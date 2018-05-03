@@ -1,8 +1,7 @@
-source 'https://github.com/CocoaPods/Specs.git'
 target 'MMDA' do
   pod 'GoogleMaps'
   pod 'GooglePlaces'
   pod 'Charts'
-  pod 'PusherSwift', '~> 4.1.0'
-  pod 'Alamofire', '~>4.4.0'
+  pod 'Alamofire'
+  pod 'PusherSwift'
 end

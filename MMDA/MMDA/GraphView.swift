@@ -8,51 +8,46 @@
 
 import UIKit
 import Charts
-import Alamofire
+
 
 class GraphView: UIViewController  {
     
-
+    @IBOutlet weak var chtChart: LineChartView!
     
-    @IBOutlet weak var chartView: LineChartView!
-    
-    
-    @IBAction func simulateButtonPressed(_ sender: Any) {
-        Alamofire.request("http://localhost:4000/simulate", method: .post).validate().responseJSON { (response) in
-            switch response.result {
-            case .success(_):
-                _ = "Successful"
-            case .failure(let error):
-                print(error)
-            }
-        }
+    @IBOutlet weak var txtTextBox: UITextField!
+    @IBAction func goButton(_ sender: Any) {
+        let input = Double(txtTextBox.text!)
+            visitors.append(input!)
+        updateGraph()
     }
     
     
-    private func updateChart() {
-        var chartEntry = [ChartDataEntry]()
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+    func updateGraph(){
+        var lineChartEntry = [ChartDataEntry]()
         
-        for i in 0..<visitors.count {
+        for i in 0..<visitors.count{
             let value = ChartDataEntry(x: Double(i), y: visitors[i])
-            chartEntry.append(value)
+            lineChartEntry.append(value)
         }
-        
-        let line = LineChartDataSet(values: chartEntry, label: "Visitor")
-        line.colors = [UIColor.green]
-        
+        let line1 = LineChartDataSet(values: lineChartEntry, label: "numbers")
+        line1.colors = [NSUIColor.blue]
         let data = LineChartData()
-        data.addDataSet(line)
+        data.addDataSet(line1)
+        chtChart.data = data
         
-        chartView.data = data
-        chartView.chartDescription?.text = "Visitors Count"
     }
+
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
         
         // Do any additional setup after loading the view, typically from a nib.
-        
+        //listenForChartUpdates()
        
     }
 

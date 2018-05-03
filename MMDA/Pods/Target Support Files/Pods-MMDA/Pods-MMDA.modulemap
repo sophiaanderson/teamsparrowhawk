@@ -1,4 +1,4 @@
-framework module Pods_MMDA {
+module Pods_MMDA [system] {
   umbrella header "Pods-MMDA-umbrella.h"
 
   export *

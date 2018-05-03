@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1FE387CD44C57FD2E3C5AA7E /* Pods_MMDA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6330C17D67756925555E34B2 /* Pods_MMDA.framework */; };
 		8D33B65E208E48BF00D75ED6 /* test.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D33B65D208E48BF00D75ED6 /* test.txt */; };
 		8D3E6251207957C100C3FE07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E6250207957C100C3FE07 /* AppDelegate.swift */; };
 		8D3E6253207957C100C3FE07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E6252207957C100C3FE07 /* ViewController.swift */; };
@@ -26,6 +25,7 @@
 		8D54EE6B208D3B3300004B95 /* SciChart.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8D54EE69208D3B3200004B95 /* SciChart.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8D54EE6E208D3B7D00004B95 /* SCIGenericWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D54EE6D208D3B7C00004B95 /* SCIGenericWrapper.swift */; };
 		8D54EE70208D3CC500004B95 /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D54EE6F208D3CC500004B95 /* Chart.swift */; };
+		D9C63A7934E114CD82B9D75F /* libPods-MMDA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F409487AF964DB13DF2536B3 /* libPods-MMDA.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +60,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		6330C17D67756925555E34B2 /* Pods_MMDA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMDA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D33B65D208E48BF00D75ED6 /* test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
 		8D3E624D207957C100C3FE07 /* MMDA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMDA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D3E6250207957C100C3FE07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +85,7 @@
 		8D54EE6F208D3CC500004B95 /* Chart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
 		D45093E482F0D2094E3D838B /* Pods-MMDA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMDA.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MMDA/Pods-MMDA.debug.xcconfig"; sourceTree = "<group>"; };
 		E220ACF58334F48F93F3E9B2 /* Pods-MMDA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMDA.release.xcconfig"; path = "Pods/Target Support Files/Pods-MMDA/Pods-MMDA.release.xcconfig"; sourceTree = "<group>"; };
+		F409487AF964DB13DF2536B3 /* libPods-MMDA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MMDA.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +94,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D54EE6A208D3B3300004B95 /* SciChart.framework in Frameworks */,
-				1FE387CD44C57FD2E3C5AA7E /* Pods_MMDA.framework in Frameworks */,
+				D9C63A7934E114CD82B9D75F /* libPods-MMDA.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,7 +190,7 @@
 		C22CD2B1C9BE2F1B2853A653 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6330C17D67756925555E34B2 /* Pods_MMDA.framework */,
+				F409487AF964DB13DF2536B3 /* libPods-MMDA.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -208,7 +208,6 @@
 				8D3E624B207957C100C3FE07 /* Resources */,
 				8D54EE6C208D3B3300004B95 /* Embed Frameworks */,
 				BB2ED474CB755F900FF3292E /* [CP] Copy Pods Resources */,
-				7739A2D3E808338C1EFB9B70 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -346,28 +345,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7739A2D3E808338C1EFB9B70 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-MMDA/Pods-MMDA-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
-				"${BUILT_PRODUCTS_DIR}/PusherSwift/PusherSwift.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PusherSwift.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MMDA/Pods-MMDA-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BB2ED474CB755F900FF3292E /* [CP] Copy Pods Resources */ = {
