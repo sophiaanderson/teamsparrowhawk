@@ -1,2 +1,0 @@
-# teamsparrowhawk
-mobile medical devices 
