@@ -14,6 +14,7 @@ class GraphView: UIViewController  {
     
     @IBOutlet weak var chtChart: LineChartView!
     
+    
     @IBOutlet weak var txtTextBox: UITextField!
     @IBAction func goButton(_ sender: Any) {
         let input = Double(txtTextBox.text!)

@@ -48,13 +48,13 @@ class ViewController3: UIViewController {
             print ("Trauma Injury alert")
         }
         
-        var alertMessage = "Report Sent To "
+      /*  var alertMessage = "Report Sent To "
         alertMessage += labelText
         let alertController = UIAlertController(title: "sparrowhawk medical", message:
             alertMessage, preferredStyle: UIAlertControllerStyle.alert)
         alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,handler: nil))
         
-        self.present(alertController, animated: true, completion: nil)
+        self.present(alertController, animated: true, completion: nil) */
     }
     
     
