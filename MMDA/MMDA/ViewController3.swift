@@ -47,6 +47,14 @@ class ViewController3: UIViewController {
         if traumaSwitch.isOn{
             print ("Trauma Injury alert")
         }
+        
+        var alertMessage = "Report Sent To "
+        alertMessage += labelText
+        let alertController = UIAlertController(title: "sparrowhawk medical", message:
+            alertMessage, preferredStyle: UIAlertControllerStyle.alert)
+        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,handler: nil))
+        
+        self.present(alertController, animated: true, completion: nil)
     }
     
     
