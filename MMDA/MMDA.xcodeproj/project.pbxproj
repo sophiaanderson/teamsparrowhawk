@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67BA24DE84A2357952D0EB3B /* libPods-MMDA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DECF6C628C308844E963FDE2 /* libPods-MMDA.a */; };
 		8D33B65E208E48BF00D75ED6 /* test.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D33B65D208E48BF00D75ED6 /* test.txt */; };
 		8D3E6251207957C100C3FE07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E6250207957C100C3FE07 /* AppDelegate.swift */; };
 		8D3E6253207957C100C3FE07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E6252207957C100C3FE07 /* ViewController.swift */; };
@@ -25,7 +26,6 @@
 		8D54EE6B208D3B3300004B95 /* SciChart.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8D54EE69208D3B3200004B95 /* SciChart.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8D54EE6E208D3B7D00004B95 /* SCIGenericWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D54EE6D208D3B7C00004B95 /* SCIGenericWrapper.swift */; };
 		8D54EE70208D3CC500004B95 /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D54EE6F208D3CC500004B95 /* Chart.swift */; };
-		D9C63A7934E114CD82B9D75F /* libPods-MMDA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F409487AF964DB13DF2536B3 /* libPods-MMDA.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,8 +84,8 @@
 		8D54EE6D208D3B7C00004B95 /* SCIGenericWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SCIGenericWrapper.swift; path = SciChart_iOS_v2.1.0.1974_SDK/SciChart.framework/SwiftUtil/SCIGenericWrapper.swift; sourceTree = "<group>"; };
 		8D54EE6F208D3CC500004B95 /* Chart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
 		D45093E482F0D2094E3D838B /* Pods-MMDA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMDA.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MMDA/Pods-MMDA.debug.xcconfig"; sourceTree = "<group>"; };
+		DECF6C628C308844E963FDE2 /* libPods-MMDA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MMDA.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E220ACF58334F48F93F3E9B2 /* Pods-MMDA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMDA.release.xcconfig"; path = "Pods/Target Support Files/Pods-MMDA/Pods-MMDA.release.xcconfig"; sourceTree = "<group>"; };
-		F409487AF964DB13DF2536B3 /* libPods-MMDA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MMDA.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +94,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D54EE6A208D3B3300004B95 /* SciChart.framework in Frameworks */,
-				D9C63A7934E114CD82B9D75F /* libPods-MMDA.a in Frameworks */,
+				67BA24DE84A2357952D0EB3B /* libPods-MMDA.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,7 +190,7 @@
 		C22CD2B1C9BE2F1B2853A653 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F409487AF964DB13DF2536B3 /* libPods-MMDA.a */,
+				DECF6C628C308844E963FDE2 /* libPods-MMDA.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
